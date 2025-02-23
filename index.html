@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>startpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="terminal-container" id="terminal">
+      <div class="terminal">
+        <!-- top CLI with datetime -->
+        <div class="prompt">
+          ben@start:~$ today is <span id="day"></span>, <span id="datetime"></span>,
+        </div>
+
+        <!-- main (col 1) -->
+        <div>
+          <div class="section">main</div>
+          <div class="links">
+            <a href="https://mail.google.com">gmail</a>
+            <a href="https://my.unimelb.edu.au">myunimelb</a>
+            <a href="https://chat.openai.com">chatgpt</a>
+            <a href="https://mathacademy.com">mathacademy</a>
+          </div>
+        </div>
+
+        <!-- read (col 2) -->
+        <div>
+          <div class="section">read</div>
+          <div class="links">
+            <a href="https://www.reuters.com">reuters</a>
+            <a href="https://news.ycombinator.com">hackernews</a>
+            <a href="https://lesswrong.com">lesswrong</a>
+            <a href="https://are.na">are.na</a>
+          </div>
+        </div>
+
+        <!-- slop (col 3) -->
+        <div>
+          <div class="section">slop</div>
+          <div class="links">
+            <a href="https://www.youtube.com">youtube</a>
+            <a href="https://www.twitch.tv">twitch</a>
+            <a href="https://www.facebook.com/marketplace">marketplace</a>
+            <a href="https://boards.4chan.org/fit/catalog#s=roon">/roon/</a>
+          </div>
+        </div>
+
+        <!-- utils (col 4) -->
+        <div>
+          <div class="section">utils</div>
+          <div class="links">
+            <a href="https://github.com/benbooker">github</a>
+            <a href="https://www.wolframalpha.com/">wolframalpha</a>
+            <a href="https://uguu.se">uguu.se</a>
+            <a href="https://maps.google.com">maps</a>
+          </div>
+        </div>
+
+        <!-- bottom CLI with text input for Kagi search -->
+        <div class="command-line">
+          ben@start:~$ <span id="typed"></span><span class="cursor"></span>
+        </div>
+      </div>
+
+      <!-- right-side image -->
+      <img class="right-image" src="image.jpg" alt="cool image :)">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

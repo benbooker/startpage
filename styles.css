@@ -1,0 +1,95 @@
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: monospace;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .terminal-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    background-color: rgba(30, 30, 30, 0.9);
+    border: 3px solid gray;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+  }
+  
+  .terminal {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 5px;
+  }
+  
+  .prompt {
+    margin: 10px 0;
+    grid-column: span 4;
+  }
+
+  .section {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5B913B;
+    text-transform: lowercase;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .command-line {
+    margin: 10px 0;
+    grid-column: span 4;
+  }
+  
+  .cursor {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 6px;
+    height: 16px;
+    background-color: white;
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .right-image {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
